@@ -68,7 +68,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *↫❍┋منشني*
 *↫❍┋كرتون*
 *↫❍┋رياضه*
-*↫❍┋رونالدو*
+*↫❍┋تخمين*
 *↫❍┋صراحه*
 *↫❍┋خيار*
 *↫❍┋هل*
@@ -93,7 +93,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *↫❍┋الغاءالقيد*
 *↫❍┋اطفاء*
 *↫❍┋تفعيل*
-*↫❍┋ادخل*
+*↫❍┋اصلح*
 *↫❍┋اخرج*
 *↫❍┋انضم*
 *↫❍┋تفقد_المده*
@@ -107,7 +107,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *↫❍┋المبندين*
 *↫❍┋المميزين*
 *↫❍┋البلوكات*
-*↫❍┋تخمين*
+*↫❍┋اعلان*
 *↫❍┋اعادةالتشغيل*
 *↫❍┋بلوك*
 *↫❍┋المطور*
@@ -139,7 +139,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *↫❍┋اخرالاخبار*
 *↫❍┋سوره*
 *↫❍┋شغل*
-*↫❍┋فيديو2*
+*↫❍┋خلفيات*
 >╚════▣◎▣════╝<
 
  🍁*قسم الاسلام*
@@ -152,7 +152,10 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 *↫❍┋سوره*
 *↫❍┋دين*
 *↫❍┋اذكار*
-*↫❍┋*
+*↫❍┋سوره2*
+*↫❍┋اذكار الصباح*
+*↫❍┋اذكار المساء*
+*↫❍┋أذكارالصباح*
 ╚════▣◎▣════╝
 
 *📹 قسم البوت والمطور*
