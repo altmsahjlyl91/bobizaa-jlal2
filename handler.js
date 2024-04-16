@@ -1535,17 +1535,17 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط من قبل مالك البوت.*',
-    owner: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط من قبل مالك البوت.*',
-    mods: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط من قبل المشرفين ومالك البوت.*',
-    premium: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط من قبل المستخدمين المميزين ومالك البوت.*',
-    group: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط في المجموعات.*',
-    private: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط في الدردشة الخاصة بالبوت.*',
-    admin: '*[ ℹ️ ] هذا الأمر يمكن استخدامه فقط من قبل مديري المجموعة.*',
-    botAdmin: '*[ ℹ️ ] لاستخدام هذا الأمر، يجب أن يكون البوت مسؤولًا في المجموعة.*',
-    unreg: '*[ ℹ️ ] لاستخدام هذا الأمر، يجب عليك التسجيل.*\n\n*[ 💡 ] استخدم الأمر:* _#verify اسم.عمر_ *للتسجيل.*',
-    restrict: '*[ ℹ️ ] تم تعطيل هذا الأمر من قبل مالك البوت.*',
- }[type];
+    rowner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
+    owner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
+    mods: '*[ ℹ️ ] This command can only be used by moderators and the bot owner.*',
+    premium: '*[ ℹ️ ] This command can only be used by premium users and the bot owner.*',
+    group: '*[ ℹ️ ] This command can only be used in groups.*',
+    private: '*[ ℹ️ ] This command can only be used in the bot s private chat.*',
+    admin: '*[ ℹ️ ] This command can only be used by group administrators.*',
+    botAdmin: '*[ ℹ️ ] To use this command it is necessary that the bot be an administrator of the group.*',
+    unreg: '*[ ℹ️ ] To use this command you must be registered.*\n\n*[ 💡 ] Use the command:* _#verify name.age_ *to register.*',
+    restrict: '*[ ℹ️ ] This command was disabled by the bot owner.*',
+  }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'BOBIZABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/noureddine_ouafy'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
