@@ -296,7 +296,7 @@ if (connection === 'close') {
         await global.reloadHandler(true).catch(console.error);
     }
 }
-  
+
 }
 
 process.on('uncaughtException', console.error);
@@ -329,15 +329,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '👋 ¡Welcome/to!\n@user';
-  conn.bye = '👋 ¡See you later!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user He was promoted to administrator.*';
-  conn.sdemote = '*[ ℹ️ ] @user He was demoted from administrator.*';
-  conn.sDesc = '*[ ℹ️ ] The group description has been modified.*';
-  conn.sSubject = '*[ ℹ️ ] The group name has been changed.*';
-  conn.sIcon = '*[ ℹ️ ] The group profile photo has been changed.*';
-  conn.sRevoke = '*[ ℹ️ ] The group invite link has been reset.*';
-
+  conn.welcome = '✦━━━━━━[|الصاعـ|ـ🇵🇸ـقة⁞¹²∆]━━━━━━✦\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( ✨نورت يحب@user)\n├[ *المطور* ]—\n│ ITACHI\UCHIHA\n┗––––––━━┅┅┅\n\n––––––┅┅ *اقرأ الوصف* ┅┅––––––\n@desc' 
+   conn.bye = '✦━━━━━━[ |الصاعـ|ـ🇵🇸ـقة⁞¹²∆ ]━━━━━━✦\n *لقد ذهب*@user* 👋🏻  ( ╹▽╹ )'
+  conn.spromote = '*@user تم ترقيته لصيبح ادمن هاذه المجموعه⚡*'
+  conn.sdemote = '*@user تمت ازالته من لائحة الادمن لهاذه المجموعه*'
+  conn.sDesc = '*تم تعديل وصف الجروب*\n\n*الوصف الجديد:* @desc'
+  conn.sSubject = ' تم تغير اسم الجروب ✨💜*\n*الاسم الجديد:* @subject'
+  conn.sIcon = '*تم تغير صوره الجروب ✨💜*'
+  conn.sRevoke = '*تم تحديث رابط الجروب ✨💜*\n*اللينك الجديد:* @revoke'
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn);
