@@ -1545,7 +1545,7 @@ global.dfail = (type, m, conn) => {
     botAdmin: '*[ ℹ️ ] لاستخدام هذا الأمر، يجب أن يكون البوت مسؤولًا في المجموعة.*',
     unreg: '*[ ℹ️ ] لاستخدام هذا الأمر، يجب عليك التسجيل.*\n\n*[ 💡 ] استخدم الأمر:* _#verify اسم.عمر_ *للتسجيل.*',
     restrict: '*[ ℹ️ ] تم تعطيل هذا الأمر من قبل مالك البوت.*',
-  };  }[type];
+ }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'BOBIZABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/noureddine_ouafy'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
