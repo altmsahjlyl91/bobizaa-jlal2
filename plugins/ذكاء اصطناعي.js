@@ -6,7 +6,7 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  if (!text) throw `مرحبا اصبح ايتاشي يدعم ChatGPT عندك اسئلة او استفسار اي شي قول\n\n❏ على سبيل المثال\n❏ ${usedPrefix + command} افضل انمي\n❏ ${usedPrefix + command} عايز نصيحه\n❏ ${usedPrefix + command} قول نكته`;
+  if (!text) throw `مرحبا اصبح بوت |الصاعـ|ـ🇵🇸ـقة⁞¹²∆ يدعم ChatGPT عندك اسئلة او استفسار اي شي قول\n\n❏ على سبيل المثال\n❏ ${usedPrefix + command} افضل انمي\n❏ ${usedPrefix + command} عايز نصيحه\n❏ ${usedPrefix + command} قول نكته`;
   try {
         conn.sendPresenceUpdate('composing', m.chat);
         //let sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
@@ -104,5 +104,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   }}
  }}
 };
-handler.command = /^(gpt|بوت)$/i;
+handler.command = /^(gpt|2بوت)$/i;
 export default handler;
