@@ -104,5 +104,5 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   }}
  }}
 };
-handler.command = /^(gpt|2بوت)$/i;
+handler.command = /^(gpt|بوت2)$/i;
 export default handler;
